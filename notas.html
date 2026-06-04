@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>EduScore - Notas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarPaginaNotas()">
+
+<header class="navbar">
+  <h1>EduScore</h1>
+
+  <nav>
+    <a href="menu.html">Voltar</a>
+    <button class="sair-btn" onclick="sair()">Sair</button>
+  </nav>
+</header>
+
+<main class="dashboard">
+
+  <section class="welcome">
+    <h2>Minhas Notas</h2>
+    <p>Consulte suas notas por matéria e por semestre.</p>
+  </section>
+
+  <section class="painel-pesquisa">
+    <input
+      type="text"
+      id="pesquisaMateria"
+      placeholder="Digite a matéria. Ex: Matemática"
+    >
+
+    <select id="filtroSemestre">
+      <option value="todos">Todos os semestres</option>
+      <option value="1">1º semestre</option>
+      <option value="2">2º semestre</option>
+    </select>
+
+    <button onclick="filtrarNotas()">Pesquisar</button>
+  </section>
+
+  <section class="materias-disponiveis">
+    <h2>Matérias disponíveis</h2>
+    <div id="listaMaterias" class="chips-materias"></div>
+  </section>
+
+  <section id="conteudoNotas" class="notas-grid"></section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

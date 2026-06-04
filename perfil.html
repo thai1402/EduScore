@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>EduScore - Perfil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarPerfil()">
+
+<header class="navbar">
+  <h1>EduScore</h1>
+
+  <nav>
+    <a href="menu.html" class="perfil-btn">Menu</a>
+    <button class="sair-btn" onclick="sair()">Sair</button>
+  </nav>
+</header>
+
+<main class="perfil-page">
+
+  <section class="perfil-hero">
+    <div>
+      <span>Área do estudante</span>
+      <h2>Meu Perfil</h2>
+      <p>Atualize seus dados acadêmicos e mantenha suas informações organizadas.</p>
+    </div>
+
+    <div class="perfil-mini-card">
+      <strong>Status</strong>
+      <p>Aluno ativo</p>
+    </div>
+  </section>
+
+  <section class="perfil-layout">
+
+    <aside class="perfil-sidebar">
+      <div class="avatar-grande">👤</div>
+      <h2 id="nomePerfil">Estudante</h2>
+      <p>Portal Acadêmico EduScore</p>
+
+      <div class="perfil-info-box">
+        <span>Curso</span>
+        <strong id="cursoResumo">ADS</strong>
+      </div>
+
+      <div class="perfil-info-box">
+        <span>Turma</span>
+        <strong id="turmaResumo">2026.1</strong>
+      </div>
+    </aside>
+
+    <section class="perfil-form-card">
+      <h2>Dados pessoais</h2>
+      <p>Edite suas informações abaixo.</p>
+
+      <div class="perfil-grid-form">
+        <div>
+          <label>Nome</label>
+          <input type="text" id="perfilNome">
+        </div>
+
+        <div>
+          <label>E-mail</label>
+          <input type="email" id="perfilEmail">
+        </div>
+
+        <div>
+          <label>Curso</label>
+          <input type="text" id="perfilCurso">
+        </div>
+
+        <div>
+          <label>Turma</label>
+          <input type="text" id="perfilTurma">
+        </div>
+      </div>
+
+      <button class="perfil-save-btn" onclick="atualizarPerfil()">
+        Salvar alterações
+      </button>
+
+      <p id="mensagemPerfil"></p>
+    </section>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

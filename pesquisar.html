@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisar Exercícios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarPesquisaMateria()">
+
+<header class="navbar">
+  <h1>EduScore</h1>
+
+  <nav>
+    <a href="menu.html">Voltar</a>
+    <button class="sair-btn" onclick="sair()">Sair</button>
+  </nav>
+</header>
+
+<main class="dashboard">
+
+  <section class="welcome">
+    <h2>Pesquisar exercícios</h2>
+    <p>Escolha uma matéria e resolva questões para melhorar seu desempenho.</p>
+  </section>
+
+  <section class="painel-pesquisa">
+    <select id="materiaPesquisa">
+      <option value="19">Matemática</option>
+      <option value="17">Natureza</option>
+      <option value="23">História</option>
+      <option value="10">Português / Literatura</option>
+      <option value="9">Conhecimentos Gerais</option>
+    </select>
+
+    <select id="dificuldade">
+      <option value="easy">Fácil</option>
+      <option value="medium">Médio</option>
+      <option value="hard">Difícil</option>
+    </select>
+
+    <button onclick="buscarExerciciosAPI()">Buscar exercícios</button>
+  </section>
+
+  <section id="resultadoApi" class="area-exercicios"></section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

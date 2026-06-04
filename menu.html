@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>EduScore - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarMenu()">
+
+<header class="navbar">
+  <h1>EduScore</h1>
+<nav>
+   <a href="perfil.html" class="perfil-btn">
+     Meu Perfil
+</a>
+    <button class="sair-btn" onclick="sair()">
+        Sair
+    </button>
+</nav>
+</header>
+
+<main class="dashboard">
+
+  <section class="welcome">
+    <h2>Bem-vindo, estudante!</h2>
+    <p>Acompanhe seu desempenho escolar.</p>
+  </section>
+
+  <section class="menu-cards">
+    <div class="card" onclick="window.location.href='notas.html'">
+      <h3>Notas</h3>
+      <p>Consulte suas notas.</p>
+    </div>
+
+    <div class="card" onclick="window.location.href='pesquisar.html'">
+      <h3>Exercícios</h3>
+      <p>Pesquise atividades por matéria.</p>
+    </div>
+
+    <div class="card" onclick="window.location.href='media.html'">
+      <h3>Média</h3>
+      <p>Veja sua média geral.</p>
+    </div>
+  </section>
+
+  <section class="dificuldades">
+   
+    <p>Com base nas suas menores notas, recomendamos exercícios para melhorar seu desempenho.</p>
+
+    <div id="listaDificuldades" class="lista-dificuldades"></div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
