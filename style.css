@@ -43,11 +43,10 @@ body {
   gap: 18px;
 }
 
-.nav-links a{
-    color:#2b2b2b;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
+.navbar a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
 }
 
 .nav-links a:hover{
@@ -973,4 +972,8 @@ body {
   .perfil-grid-form {
     grid-template-columns: 1fr;
   }
+}
+.navbar .login-btn {
+  color: white !important;
+  text-decoration: none !important;
 }
